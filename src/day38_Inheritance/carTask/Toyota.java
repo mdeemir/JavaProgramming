@@ -10,8 +10,14 @@ public class Toyota extends Car {
         System.out.println(brand+" "+model+" is reliable");
     }
 
-
-    public void start(){
+//public > protected > default > private (görünürlük sıralaması)
+    /*OVERRİDİNG
+    Giving different implementations to the method
+• One method having multiple different implementations
+• Overriding a method must take place in subclass
+• Less memory usage and Improves the reusability of our code
+     */
+    public void start(){// overriding metod. önce bunu yürütür java parent class taki metod yeirne
         System.out.println("Twist the key to ignition to start "+brand+" "+model);
     }
 
