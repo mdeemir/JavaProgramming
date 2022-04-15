@@ -27,7 +27,7 @@ public class Shape {
     }
 
 
-    public double area(){
+    public double area(){ //private olamaz cünkü override yapacaz
         return 0;
     }
 
