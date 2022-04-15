@@ -28,7 +28,8 @@ public class Shape {
 
 
     public double area(){ //private olamaz cünkü override yapacaz
-        return 0;
+        return 0;//bu değer zaten değişecek onun için 0 veya 200000 yazmışın önemli değil
+        // önemli olan return bi metod olduğu çin bi değer dndürmesi lazım onu yaz
     }
 
     public double perimeter(){
