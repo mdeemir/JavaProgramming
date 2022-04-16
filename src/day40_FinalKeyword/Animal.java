@@ -64,12 +64,12 @@ public class Animal {
     //----------Setters---------------------
 
 
-    public void eat(){
+    public void eat(){//sub classlar da bunu değiştirebilirm yani override yapabilirim
         System.out.println(name+" is eating");
     }
 
-    public final void drink(){
-        System.out.println(name+" is drinking water");
+    public final void drink(){//metod artık override yapılamaz
+        System.out.println(name+" is drinking water");//bütün animallar için artık bu değiştiirlemez
     }
 
 
