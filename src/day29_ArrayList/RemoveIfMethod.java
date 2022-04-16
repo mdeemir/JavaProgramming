@@ -55,7 +55,7 @@ public class RemoveIfMethod {
         ArrayList<String> names = new ArrayList<>();
         names.addAll(Arrays.asList("Anna", "Racecar", "Level", "Eye", "Java", "Python", "Cydeo"));
 
-        names.removeIf( name -> !StringUtility.isPalindrome(name));
+        names.removeIf( name -> !StringUtility.isPalindrome(name));//palindrom olmayanları çıkarmak iiçin
         // utilities package dan StringUtility class içindeki isPalindromw metodunu çağırdık
         System.out.println(names);//[Anna, Racecar, Level, Eye]
 
