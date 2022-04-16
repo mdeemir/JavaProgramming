@@ -1,7 +1,7 @@
 package day40_FinalKeyword;
 
 public class FinalVariable {
-
+//ONCE AND FOREVER
     final String birthDay;
     final static String name;
 
@@ -11,7 +11,7 @@ public class FinalVariable {
     }
 
     public FinalVariable(String birthDay) {// bunu yapmazsan sadece final String birthDay; böyle kalırsa hata verir. tanımlama yapmalısın
-        //cons ile nesne oluşturuldugunda bu argument birtday olacak ve bir daha değiştirilemeyecek
+        //cons ile nesne oluşturuldugunda bu argument birtday olacak ve bir daha değiştirilemeyecek //ONCE AND FOREVER
         this.birthDay = birthDay;
     }
 

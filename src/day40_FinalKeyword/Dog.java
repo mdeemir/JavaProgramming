@@ -1,13 +1,14 @@
 package day40_FinalKeyword;
 
 public final class Dog extends Animal {//sub class
-
+//final class yaptığında artık dog class parent clas olamaz yani sub class oluşturamazsın dog classa bağlı olarak
+    //snıf final olduğunda metodlar da default olarak final metod olur ama variable lar final variable olmaz
 
     public Dog(String name, String breed, char gender, String color, String size, int age) {
         super(name, breed, gender, color, size, age);
     }
 
-    public void eat(){// final olmadığı için override yapabildik
+    public void eat(){// final olmadığı için override yapabildikç
         System.out.println(getName()+" is eating dog food");//bunu yazmasını isityoruz ve değiştirdik override yaptık
     }
 

@@ -68,7 +68,7 @@ public class Animal {
         System.out.println(name+" is eating");
     }
 
-    public final void drink(){//metod artık override yapılamaz
+    public final void drink(){//metod artık override yapılamaz   AMA DİKKAT OVERLOAD a her zaman yapabiliriz
         System.out.println(name+" is drinking water");//bütün animallar için artık bu değiştiirlemez
     }
 
