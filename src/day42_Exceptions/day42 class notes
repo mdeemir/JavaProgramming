@@ -1,0 +1,55 @@
+Java Day42
+Topic: Exceptions Continue
+				Throws keyword
+				Throw keyword
+				Custom Exceptions
+
+
+package name: day42_Exceptions
+
+Warmup task:
+	MorningWorkOut:
+			1. Do 30 push-ups and try pausing 1.5 seconds in each
+
+
+			2. Do 20 Pull-ups and try pausing 2.5 seconds in each
+
+
+
+Exception Handlings:
+
+		1. try & catch: used for handling checked & unchecked exceptions
+		                ---> dez avantajı çok kod yazıyorsun avantajı devamlı bir çözüm. bir metodu cağıracaksan bunu kullan
+
+				try{
+					exception code
+				}catch(ExceptionType e){
+					e.printStackTrace();
+				}
+
+		2. throws: used for handling checked exceptions ONLY
+            ---> avantajı en hızlı çözüm am en iyisi değil dez avantajı geçici çözüm. metodu başka yerde çağırdıgında o metod da çalışmaz
+                   bu nedenle bir metodu bir daha çağırmayacaksan veya cagıramayacaksan (mesela main metod) throws u kullan
+
+						Caller of the method will be responsible for handling the exception
+
+
+
+throw keyword: used for manually throw exception
+
+		throw ExceptionObject
+
+	String browser = "Cydeo";
+
+
+
+
+Monday:
+	OOP Abstraction Intro: Abstract method & abstract class
+
+Thursday:
+	OOP ABstraction: Interface
+
+
+Monday:
+	OOP Abstraction Review

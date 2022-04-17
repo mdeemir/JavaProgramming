@@ -73,6 +73,7 @@ Exception handlings:
 			                    tek kural parent class ı (RunTime Exception) önce child ı sonra yazma. child olanı önce yaz
 
 			finally block: always gets executed regardless of the exception is being handled or not handled
+			                // finally bloğu ensona yazmalısın cath arasına yazma
 
 							to stop the execution of the finally block: Syste.exit(0)
 
