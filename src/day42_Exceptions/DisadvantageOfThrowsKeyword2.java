@@ -12,6 +12,7 @@ public class DisadvantageOfThrowsKeyword2 {
 
 
         String str = null;
+        //sadece never use try catch i kullan runtime exception için. unchecked exceptionlar için DİKKKKATTTTT
         try {
             System.out.println(str.charAt(0));
         }catch (RuntimeException e){
@@ -30,7 +31,7 @@ public class DisadvantageOfThrowsKeyword2 {
     }
 
     public static void method1() throws InterruptedException {
-
+//parent class public static void method1() throws Exception yazabilirsin ama her hatayı görmez bu sefer gerek yok böyle birsey tavsiye edilmez zate
         //new FileInputStream("");
         Thread.sleep(3000);
 

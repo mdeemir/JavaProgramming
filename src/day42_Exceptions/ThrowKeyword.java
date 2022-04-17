@@ -6,12 +6,13 @@ import java.util.Scanner;
 public class ThrowKeyword {
 
     public static void main(String[] args) {
-// metod syntax ına yazarsan SADECE METOD İÇİNDE HATAYI BERTARAF EDER
+
         System.out.println("Enter your age:");  // -20
         int age = new Scanner(System.in).nextInt();
 
         if(age < 0){
             throw new InputMismatchException("Age can not be negative: "+age);
+        // syntax bu new InputMismatchException nesne oluşturduk  InputMismatchException bu sınıftan
         }
 
         if(age > 21){

@@ -33,8 +33,14 @@ Exception Handlings:
 
 						Caller of the method will be responsible for handling the exception
 
+check exception için 2 secenek var
+    1 TRY CATCH  sürekli ve daha iyi olan cözüm
+    2 THROWS hızlı geçici cözüm
+ unchecked exception için sadece try cath i kullannnnn
 
 
+
+ ////throws ile throw farklı DİKKATTTT
 throw keyword: used for manually throw exception
 
 		throw ExceptionObject
