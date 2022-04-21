@@ -10,7 +10,7 @@ public class AmazonHomePage extends Browser{ // you CANNOT inherit from final cl
 
     public void navigateTo(String link){
         // normally we will have selenium code but for right now we will just use println to understand inheritance
-        System.out.println("Navigating to "+link+" using "+super.getName());
+        System.out.println("Navigating to "+link+" using "+super.getName());//getname yazsan da olurdu
     }
 
 
