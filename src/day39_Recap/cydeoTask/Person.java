@@ -31,7 +31,7 @@ public class Person {
     }
 
     public Person(String name, int age, char gender) {//constructor ---> genrate constroctor
-        setName(name);//koşula uygun verileri alamak istideğim için setName kullandım
+        setName(name);//koşula uygun verileri almak istideğim için setName kullandım
         setAge(age);
         setGender(gender);
     }
