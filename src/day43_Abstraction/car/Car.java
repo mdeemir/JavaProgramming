@@ -2,10 +2,10 @@ package day43_Abstraction.car;
 
 public abstract class Car {
 
-    private final String brand, model;
-    private String color;
-    private final int year;
-    private double price;
+    private final String brand, model;// bir kere tanımlanınca bir daha değişmesini istemiyorum
+    private String color;//değişeblir olarak ayarladık set metod ile
+    private final int year;// bir kere tanımlanınca bir daha değişmesini istemiyorum
+    private double price;//değişeblir olarak ayarladık set metod ile
 
     public Car(String brand, String model, String color, int year, double price) {
         this.brand = brand;
@@ -56,7 +56,17 @@ public abstract class Car {
         System.out.println("Press the brake");
     }
 
-    public abstract void start();
+    public abstract void start();//parent class için metodun ayrıntıları önemli dğeil sadece ne yaptığı önemli nasıl yaptığı değil
+    /*
+    {}   body olmadan bi metod oluşturduk. bu şekilde compiler erro verirdi. abstact yazmazsak bu hata geçmez.
+    metodu abstract yaptığında sınıfı da abstract yapman lazım. yapmazsan yine derleyici hata verir.
+     private abstract void start(); ---> olamaz derleyici hata verir
+      public final abstract void start(); ----> olamaz derleyici hata verir
+       public static void start();----> olamaz. derleyici hata verir.
+       abstract class parent class olması lazım bu nedenle public final abstract class Car ---> olamaz  çünkü parent class olabilmeli
+
+
+     */
 
 
     @Override
