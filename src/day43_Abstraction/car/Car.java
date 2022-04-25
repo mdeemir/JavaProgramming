@@ -52,10 +52,10 @@ public abstract class Car {
         this.price = price;
     }
 
-    public  void stop(){
+    public  void stop(){ //tamamlanmış bir metod
         System.out.println("Press the brake");
     }
-
+//tamamlanmamış metod. child class tamamlayacak
     public abstract void start();//parent class için metodun ayrıntıları önemli dğeil sadece ne yaptığı önemli nasıl yaptığı değil
     /*
     {}   body olmadan bi metod oluşturduk. bu şekilde compiler erro verirdi. abstact yazmazsak bu hata geçmez.

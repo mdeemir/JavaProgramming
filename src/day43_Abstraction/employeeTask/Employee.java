@@ -39,7 +39,9 @@ public abstract class Employee extends Person{
 
     public abstract void work();
 
-    public String toString() {
+    //persondaki sleep() abstract class da yüklenir.
+
+    public String toString() {//tostiring metodu override yaptık
         return "Employee{" +
                 "name=" + getName() +
                 ", age=" + getAge() +

@@ -17,16 +17,16 @@ public class EmployeeObjects {
         System.out.println(teacher);
         System.out.println(driver);
 
-        tester.work();
-        tester.sleep();
-        tester.bugReport();
-        tester.eat();
+        tester.work();//---> parent classtan gelen
+        tester.sleep();//---> parent classtan gelen
+        tester.bugReport();//---> tester class tan gelen
+        tester.eat();//---> parent classtan gelen
 
         System.out.println("-----------------------------------");
 
         developer.work();
         developer.sleep();
-       // developer.bugReport();
+       // developer.bugReport();----> developer class ta yok bu metod
         developer.eat();
         developer.unitTest();
 

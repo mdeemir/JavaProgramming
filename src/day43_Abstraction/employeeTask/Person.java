@@ -40,8 +40,8 @@ public abstract class Person {
     }
 
 
-    public abstract void sleep();
-
+    public abstract void sleep(); // {} yazmadıgım için tamamlanmayan bir metod oldu ve abstract metod olmalı. metod abstract olunca  sınıf da abstract olmalı
+//abstract metod sadece 2 şekilde olablir. ya abstract class için de ya da interface içinde (sonra ögrenecez)
     public void eat(){
         System.out.println(name+" is eating baklava");
     }
