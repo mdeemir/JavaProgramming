@@ -65,6 +65,10 @@ public abstract class Car {
        public static void start();----> olamaz. derleyici hata verir.
        abstract class parent class olması lazım bu nedenle public final abstract class Car ---> olamaz  çünkü parent class olabilmeli
 
+parent cass sadece metodun oluşurulmasından sorumlu detaylardan sorumlu değil detayları sub class tamamlamalı.
+
+abstract class tan nesne oluşturamazsın. çünkü tamamlanmayan metodları var. yani somut değil soyut bir sınıf
+//soyut sınıftan somut nesne oluşturamazsın
 
      */
 
