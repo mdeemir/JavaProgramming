@@ -5,8 +5,8 @@ class Test{
 
     public static void main(String[] args) {
 
-        System.out.println(new Test().getClass().getSimpleName());
-        System.out.println(new Test().getClass().getName());
+        System.out.println(new Test().getClass().getSimpleName()); //---> TeSt yazar konsola
+        System.out.println(new Test().getClass().getName()); ---> day44_Abstraction.animalTask.Test yazar konsola
 
     }
 
@@ -98,11 +98,24 @@ public abstract class Animal {
     }//burada static kullanmak akla gelebilir çünkü değişmeyecek ama name değişkeni instance olduğu için static yapamayız
     //private da yapamayız çünkü diğer nesneler bunu kullanamaz. bu nedenle final bizim için en iyisi
 
-    public  abstract void eat();
+    public  abstract void eat();/*imğlementation vermedik çünkü bunu sub classın tamamlamasını istiyoruz. biz sadece ne oldugunu tanımladık.
+    nasıl olduğunu sub class a bıraktık. bunu yapabilmek için abstract metod kulanmalıyız. abstract metodu kulanmak için 2 yol var. abstract class veya
+    interface kullanmalıyız. burada parent class animal olduğu için abstract class kullandık ve aimal classı abstarct class yaptık. animal abstaract class
+    olunca artık bu class tan nesne oluşturaamayacaz. nesneleri sub classlardan oluşturacaz
+
+    public  final abstract void eat(); final yapamayız çünkü bu metod override edilmek zorunda çünkü yarım. implemention u yok final yaparsan override yapılamaz
+final ve abstract kelimelerinin birlikte kullanılması mantık gereği imkansız
+
+    bu metodun artık çok sayıda implementionu olabilir. bunu sub classlar tamamlayacak.
+
+    */
 
 
     @Override
     public String toString() {
+        /*
+        getClass().getSimpleName() class ismini cağırmak için bunu kullanabilir. getClass metodu class ile  ilgili bilgileri cağırır. bunlar arasından ismini cagırdık.
+         */
         return getClass().getSimpleName()+"{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +

@@ -1,6 +1,7 @@
 package day44_Abstraction.animalTask;
 
 public final class Parrot extends Animal implements Playable, Flyable {
+    //final class yapmamızın amacı diğer classlar inhetit edemesin parrot class ı
 
     public Parrot(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
