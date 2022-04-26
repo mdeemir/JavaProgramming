@@ -16,23 +16,32 @@ class Test{
 public abstract class Animal {
 
     private String name;
-    private final String breed;
-    private final char gender;
-    private int age;
-    private String size;
-    private final String color;
+    private final String breed;// ilk nesne oluşturmada atanan değerin değişmesini istemiyoruz bu yüzden final kullanıyorum
+    private final char gender;// ilk nesne oluşturmada atanan değerin değişmesini istemiyoruz bu yüzden final kullanıyorum
+    private int age;//her nesne için ayrı kopya oluşturulmasını istediğim için instance değişken olusturdum. birden çok kopyası olacak
+    private String size;//her nesne için ayrı kopya oluşturulmasını istediğim için instance değişken olusturdum. birden çok kopyası olacak
+    private final String color; // ilk nesne oluşturmada atanan değerin değişmesini istemiyoruz bu yüzden final kullanıyorum
 
-    public final static boolean canBreathe;
-
+    public final static boolean canBreathe; //tek kopya yeterli bütün nesneler için o yüzden static. ve ilk atamadan(asagıda) sonra değişssin istemiyorum.
+//public final static boolean canBreathe=true;
     static{
-        canBreathe = true;
+        canBreathe = true;//static blok çinde değişkenin tanımlamasını yaptım
     }
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
+        /*
+          if(name.isEmpty()){
+            throw new RuntimeException("Invalid Name");
+        }
+        this.name = name;
+    }  ---> böyle de yazılabilir ama setter da  ayarlamazsan başka yerde(nesne oluşturma dışında) setname metodu çağırırsan bu sefer koşulu kontrol etmez
+    bu nedenle setname() metodu içinde yazmamız daha kullaışlı ve doğru çünkü setname metodunu her zaman çağırabilirsin
+         */
         setName(name);
 
-        this.breed = breed;
-
+        this.breed = breed;//koşul eklemye gerek görmedşk eklemek isteseydik gender daki gibi cons içinde bunu yapmalıydık çünkü final değişken ve setter ı yok
+//if blogu yani koşulu this.gender = gender; ifadesinden önce girmelisin ki önce koşulu test etsin.
+// gender ı final olarak ayarladığımız için setter metodumuz yok bu nedenle cons oluştururken değerini vekoşulunu ekliyoruz
         if ( !(gender == 'M' || gender =='F')){
             throw new RuntimeException("Invalid gender: "+gender);
         }
@@ -43,7 +52,8 @@ public abstract class Animal {
 
         this.color = color;
     }
-
+// final variable için setter otomatik yapılmaz çünkü zaten birkere ayarladıktan sonra değiştiremiyorsun.
+    //cons oluturmadan final variable lar hata veriri çünkü ilk ayarlamyı cons eklerken ayarlanmalı
     public String getName() {
         return name;
     }
@@ -85,7 +95,8 @@ public abstract class Animal {
 
     public final void drink(){
         System.out.println(name+" is drinking");
-    }
+    }//burada static kullanmak akla gelebilir çünkü değişmeyecek ama name değişkeni instance olduğu için static yapamayız
+    //private da yapamayız çünkü diğer nesneler bunu kullanamaz. bu nedenle final bizim için en iyisi
 
     public  abstract void eat();
 
