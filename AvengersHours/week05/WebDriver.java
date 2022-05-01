@@ -43,7 +43,7 @@ public static void clickElement(Name name){
         System.out.println("Clicking on "+name.locator);
         }
 
-        Locators navigateTo(String link){
+        Locators navigateTo(String link){//default access modifier
         Locators locators = new Locators(link);
         return locators;
         }

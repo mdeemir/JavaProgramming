@@ -8,7 +8,7 @@ public class Chrome extends WebDriver {
     /*
     Method Overriding Rules:
     1. Same name same parameter
-    2. Return type same or covariant (sub-class, sub-type)
+    2. Return type same or covariant (sub-class, sub-type) --> covariantı araştır hoca yeni söyledi
     3. Access modifier of the overriding method in child class should be more visible
     4. private and final methods can not be over-ridden
     5. Static methods can not be overridden, they can be hidden (you will learn later)

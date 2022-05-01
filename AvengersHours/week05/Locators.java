@@ -9,7 +9,7 @@ public class Locators {
 class ID extends Locators{
     public ID(String locator) {
         super(locator);
-    }
+    } // parent class default cons. olmadığı için
 }
 class Name extends Locators{
     public Name(String locator) {
