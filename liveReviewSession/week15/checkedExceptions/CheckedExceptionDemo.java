@@ -12,7 +12,8 @@ public class CheckedExceptionDemo {
         }
         System.out.println("I will move on with my web automation");
 
-        // 2. Declare using the Throws Keyword
+        // 2. Declare using the Throws Keyword ---> YUKARDA METOD SYNTAX INDA THROWS ANAHTAR KELİMESİ İLE YAZDIK.
+        // 2YOL VAR CHECKED EXCEPTİON DA
         Thread.sleep(5000);
         System.out.println("More automation after 5 more seconds");
 

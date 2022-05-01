@@ -2,7 +2,7 @@ package week15.customExceptions;
 
 public class CustomExceptionTest {
     public static void main(String[] args) {
-
+//KENDİMİZ EXCEPTİON OLUŞTURDUK ---> CUSTOMEXCEPTİON
         int minutes = 30;
         System.out.println("Class is going on for "+minutes+" minutes");
         if(minutes > 50 ){

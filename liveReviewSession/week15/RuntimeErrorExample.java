@@ -13,8 +13,10 @@ public class RuntimeErrorExample {
      try {
          System.out.println( x / y );  // when user puts zero this line will be skipped
      }catch(Exception e){
-
+//E YERİNE HERHANGİ BİŞEY YAZILABİLİRDİ
      }
+
+     // handling exceptiıon yapmazsan program ilerlemez burada keser
         System.out.println("How are you today ? ");
         System.out.println("Some more lines of code");
         System.out.println("we swallowed the exception object");

@@ -9,7 +9,7 @@ public class MultiCatchExamples {
        word = null;
         try {
             System.out.println(word.substring(20));  // unchecked exception
-        }catch (StringIndexOutOfBoundsException e){
+        }catch (StringIndexOutOfBoundsException e){ //HİYERARŞİK OLARAK ALTTA OLANI ÖNCE YAZMAK LAZIM
             System.out.println(e.getClass().getSimpleName());
             System.out.println("Reason = "+e.getMessage());
         }catch (Throwable t){ // parent of all exceptions
