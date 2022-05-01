@@ -60,7 +60,7 @@ public class OnSaleItem extends Item{
     public String toString() {
         return "OnSaleItem{" +
                 "discountPercentage=" + discountPercentage
-                +" name= "+super.getName()+
+                +" name= "+super.getName()+// super.   ---> parent class ı işaret eder
                 "price= "+super.getPrice()+
                 '}';
     }
