@@ -1,9 +1,12 @@
 package day45_Abstraction.shape;
 
-public abstract class Shape {
+public abstract class Shape {//ABSTRACT METODU KULLANDIGINDA CLASSI DA ABSTARCT YAPMALISIN. YANİ TAMAMLANMAYA
+    //İHTİYACI OLAN SOYUT BİR SINIF OLMALI. ÇÜNKÜ CHİLD CLASS ABSTRACT METODU ALACAK MECBUR ALINCA DA TAMAMLAMAK ZORUNNDA KLACAK
+    //TAMAMLANMAYA MUHTAÇ OLDUGUNDAN CLASS DA ABSTRACT METOD OLMALI
 
     private final String name;
-
+//FİNAL OLDUĞUİÇİN SETTER VERMEZ GENERATEDEN OLUŞTURURKEN. AMA FİNAL OLDUĞU İÇİN İNSTANCE DEĞİŞKENİ
+//İLK DEFA OLUŞTURUKEN ATAMALISIN THİS.NAME=NAME YAPTIK NESNE OLUŞTURDUK
     public Shape(String name) {
         this.name = name;
     }
@@ -12,8 +15,11 @@ public abstract class Shape {
         return name;
     }
 
-    public abstract double area();
-
+    public abstract double area();  //{}  EKLEMDİK VE ABSTRACT YAPTIK. METOD GÖVDESİNİN TAMAMLANMASINI
+    //CHİLD CLASS A BIRAKTIK. PARENT SACEDE METODUN TANIMLANMSI İLE SORUMUL. CHİLD CLASS TAMMALAMAK İLE SORUMLU
+//RETURN TYPE HERHANGİ BİRİ (VOİD VEYA RETURN METOD)OLABİLİR
+    //STATİC VEYA FİNAL VEREMEZSİN ÇÜNKÜ TAMMALANACAK.
+    //PRİVATE DA YAPAMAZSIN ÇÜNKÜ CHİLD KULLANACAK
     public abstract double perimeter();
 
     @Override

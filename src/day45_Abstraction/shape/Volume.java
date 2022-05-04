@@ -7,7 +7,7 @@ public interface Volume {
      double volume();
 
    /*
-    default void drink(){
+    default void drink(){ /// İMPLEMENTİON İLE METOD EKLEMEK İSTİYORSAN DEFAULT METODU KULLANMALISIN
          System.out.println("Drinks water");
      }
    */
