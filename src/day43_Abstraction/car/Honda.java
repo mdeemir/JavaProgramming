@@ -12,7 +12,7 @@ final ı yazdık cünkü başka class inherit etmesin istedik. böyle bi durum y
     }
 
 
-    public void start(){ //parebt class ile aynı veya daha görünür olmalı. return type ve parameter da aynı olmalı
+    public void start(){ //parent class ile aynı veya daha görünür olmalı. return type ve parameter da aynı olmalı
         // bu metodu çağırdıgında sınıf ismindeki derleyici hatası kalkar
         System.out.println("Twist the key to ignition"); //complete the parent class abstract class method
         //sub class ta bu metodu tamamlamak zorunlu tamamlamazsan hata verir.

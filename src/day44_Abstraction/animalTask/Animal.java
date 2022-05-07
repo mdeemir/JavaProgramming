@@ -35,13 +35,13 @@ public abstract class Animal {
         }
         this.name = name;
     }  ---> böyle de yazılabilir ama setter da  ayarlamazsan başka yerde(nesne oluşturma dışında) setname metodu çağırırsan bu sefer koşulu kontrol etmez
-    bu nedenle setname() metodu içinde yazmamız daha kullaışlı ve doğru çünkü setname metodunu her zaman çağırabilirsin
+    bu nedenle setname() metodu içinde yazmamız daha kullanışlı ve doğru çünkü setname metodunu her zaman çağırabilirsin
          */
         setName(name);
 
-        this.breed = breed;//koşul eklemye gerek görmedşk eklemek isteseydik gender daki gibi cons içinde bunu yapmalıydık çünkü final değişken ve setter ı yok
+        this.breed = breed;//koşul eklemeye gerek görmedik eklemek isteseydik gender daki gibi cons içinde bunu yapmalıydık çünkü final değişken ve setter ı yok
 //if blogu yani koşulu this.gender = gender; ifadesinden önce girmelisin ki önce koşulu test etsin.
-// gender ı final olarak ayarladığımız için setter metodumuz yok bu nedenle cons oluştururken değerini vekoşulunu ekliyoruz
+// gender ı final olarak ayarladığımız için setter metodumuz yok bu nedenle cons oluştururken değerini ve koşulunu ekliyoruz
         if ( !(gender == 'M' || gender =='F')){
             throw new RuntimeException("Invalid gender: "+gender);
         }
@@ -53,7 +53,7 @@ public abstract class Animal {
         this.color = color;
     }
 // final variable için setter otomatik yapılmaz çünkü zaten birkere ayarladıktan sonra değiştiremiyorsun.
-    //cons oluturmadan final variable lar hata veriri çünkü ilk ayarlamyı cons eklerken ayarlanmalı
+    //cons oluşturmadan final variable lar hata verir çünkü ilk ayarlamyı cons eklerken ayarlanmalı
     public String getName() {
         return name;
     }
@@ -98,10 +98,10 @@ public abstract class Animal {
     }//burada static kullanmak akla gelebilir çünkü değişmeyecek ama name değişkeni instance olduğu için static yapamayız
     //private da yapamayız çünkü diğer nesneler bunu kullanamaz. bu nedenle final bizim için en iyisi
 
-    public  abstract void eat();/*imğlementation vermedik çünkü bunu sub classın tamamlamasını istiyoruz. biz sadece ne oldugunu tanımladık.
+    public  abstract void eat();/*implementation vermedik çünkü bunu sub classın tamamlamasını istiyoruz. biz sadece ne oldugunu tanımladık.
     nasıl olduğunu sub class a bıraktık. bunu yapabilmek için abstract metod kulanmalıyız. abstract metodu kulanmak için 2 yol var. abstract class veya
-    interface kullanmalıyız. burada parent class animal olduğu için abstract class kullandık ve aimal classı abstarct class yaptık. animal abstaract class
-    olunca artık bu class tan nesne oluşturaamayacaz. nesneleri sub classlardan oluşturacaz
+    interface kullanmalıyız. burada parent class animal olduğu için abstract class kullandık ve animal classı abstarct class yaptık. animal abstract class
+    olunca artık bu class tan nesne oluşturamayacaz. nesneleri sub classlardan oluşturacaz
 
     public  final abstract void eat(); final yapamayız çünkü bu metod override edilmek zorunda çünkü yarım. implemention u yok final yaparsan override yapılamaz
 final ve abstract kelimelerinin birlikte kullanılması mantık gereği imkansız

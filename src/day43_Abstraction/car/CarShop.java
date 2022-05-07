@@ -9,7 +9,7 @@ public class CarShop {
 
 
         Honda honda = new Honda("Accord", "Black", 2019, 30000);
-        //nesne oluşturabildik çünkü honda class ı somutlaştırdık abstract metodu tamaladık
+        //nesne oluşturabildik çünkü honda class ı somutlaştırdık abstract metodu tamamladık
 
         Audi audi = new Audi("Q7", "Blue", 2020, 45000);
 
@@ -20,7 +20,7 @@ public class CarShop {
         System.out.println(tesla);
 
         System.out.println("------------------------------------");
-// brand model year ı artık değiştiremeyiz çünkü fibal variable olarak tanımladık.
+// brand model year ı artık değiştiremeyiz çünkü final variable olarak tanımladık.
         honda.setColor("Red");//private variable oluşturduğumuz için tekrar ayarlayabildik
         audi.setColor("Pink");
         tesla.setColor("Green");

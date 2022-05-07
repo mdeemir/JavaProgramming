@@ -56,9 +56,9 @@ public abstract class Car {
         System.out.println("Press the brake");
     }
 //tamamlanmamış metod. child class tamamlayacak
-    public abstract void start();//parent class için metodun ayrıntıları önemli dğeil sadece ne yaptığı önemli nasıl yaptığı değil
+    public abstract void start();//parent class için metodun ayrıntıları önemli değil sadece ne yaptığı önemli nasıl yaptığı değil
     /*
-    {}   body olmadan bi metod oluşturduk. bu şekilde compiler erro verirdi. abstact yazmazsak bu hata geçmez.
+    {}   body olmadan bi metod oluşturduk. bu şekilde compiler error verirdi. abstact yazmazsak bu hata geçmez.
     metodu abstract yaptığında sınıfı da abstract yapman lazım. yapmazsan yine derleyici hata verir.
      private abstract void start(); ---> olamaz derleyici hata verir
       public final abstract void start(); ----> olamaz derleyici hata verir
