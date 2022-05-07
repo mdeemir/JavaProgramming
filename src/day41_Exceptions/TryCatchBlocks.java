@@ -16,7 +16,7 @@ public class TryCatchBlocks {
             System.out.println("Try Block");
 
         }catch (ArithmeticException e){// ArithmeticException bu ortaya çıkan hatanın yer aldığı sınıf. java.lanf çinde yer alır
-            //program çalıştıırldıgında kırmızı ile konsolda yazan ayrıntılarda yazar. aynı sekilde yazman gerekir. "e" ise
+            //program çalıştırıldıgında kırmızı ile konsolda yazan ayrıntılarda yazar. aynı sekilde yazman gerekir. "e" ise
             // nesne yi ifade eder, a, b,c ,dfdf, olabilir ismi farketmez.  "System.out.println(9/0);" bu bir hata nesnesi
             System.out.println("Catch Block");
 
@@ -48,8 +48,8 @@ Test1 Completed
 
         }catch (RuntimeException e){//RuntimeException ana parent class ı yazarsan hepsini çözer. hangi sınıfa ait oldugunu bilmiyorsan
 //Throwable ı kesinlikle kullanma, uncheked için runtime exception classını kullan. cheched lar için zaten derleyici gösteriyor.
-            e.printStackTrace();//hatayı vedatylarını  konsola yazdırır ama programı hatasız yürütür. rapor yazarken çok işimizze yarar
-// getMessaage ise özet olark yazar hatayı sadece hata başlığını yazar konsola. bunun için rapor oluştururken printStackTrace() metodunu kullanırız
+            e.printStackTrace();//hatayı vedatylarını  konsola yazdırır ama programı hatasız yürütür. rapor yazarken çok işimize yarar
+// getMessaage ise özet olarak yazar hatayı sadece hata başlığını yazar konsola. bunun için rapor oluştururken printStackTrace() metodunu kullanırız
             // System.out.println( e.getMessage() );
 
         }

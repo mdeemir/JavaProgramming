@@ -24,8 +24,8 @@ public class MultiCatchBlocks {
         }catch (ClassCastException e){
             System.out.println("Fourth catch block");
             e.printStackTrace();
-        }catch (RuntimeException e){//parent class ı önce yazma tek kural bu yazarsan derleyici hata gösterir altı kırmızı çizgilli
-            // istediğin kadar catch blokc oluştur
+        }catch (RuntimeException e){//parent class ı önce yazma tek kural bu yazarsan derleyici hata gösterir altı kırmızı çizgili
+            // istediğin kadar catch blok oluştur
             System.out.println("Fifth catch block");
             e.printStackTrace();
         }

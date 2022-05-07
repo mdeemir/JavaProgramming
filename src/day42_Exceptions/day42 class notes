@@ -28,7 +28,7 @@ Exception Handlings:
 				}
 
 		2. throws: used for handling checked exceptions ONLY
-            ---> avantajı en hızlı çözüm am en iyisi değil dez avantajı geçici çözüm. metodu başka yerde çağırdıgında o metod da çalışmaz
+            ---> avantajı en hızlı çözüm ama en iyisi değil dezavantajı geçici çözüm. metodu başka yerde çağırdıgında o metodda çalışmaz
                    bu nedenle bir metodu bir daha çağırmayacaksan veya cagıramayacaksan (mesela main metod) throws u kullan
 
 						Caller of the method will be responsible for handling the exception
@@ -36,7 +36,7 @@ Exception Handlings:
 check exception için 2 secenek var
     1 TRY CATCH  sürekli ve daha iyi olan cözüm
     2 THROWS hızlı geçici cözüm
- unchecked exception için sadece try cath i kullannnnn
+ unchecked exception için sadece try catch i kullannnnn!!!!!!!!!
 
 
 

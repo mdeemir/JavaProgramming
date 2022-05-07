@@ -31,7 +31,7 @@ public class DisadvantageOfThrowsKeyword2 {
     }
 
     public static void method1() throws InterruptedException {
-//parent class public static void method1() throws Exception yazabilirsin ama her hatayı görmez bu sefer gerek yok böyle birsey tavsiye edilmez zate
+//parent class public static void method1() throws Exception yazabilirsin ama her hatayı görmez bu sefer gerek yok böyle birsey tavsiye edilmez zaten
         //new FileInputStream("");
         Thread.sleep(3000);
 

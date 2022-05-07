@@ -11,7 +11,7 @@ public class FinallyBlock {
         }catch (RuntimeException e){
             System.out.println("Catch Block");
             e.printStackTrace();
-            System.exit(0);// bunu yazmazsan hem carh block hem de finally blok calışır.
+            System.exit(0);// bunu yazmazsan hem catch block hem de finally blok calışır.
             //yani manuel olarak System.exit(0); bunu yazmazsan finally blok herzaman calişir.
         }finally {
             System.out.println("Finally Block");

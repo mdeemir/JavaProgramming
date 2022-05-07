@@ -8,7 +8,7 @@ Access Modifiers:
 		public > protected > default > private (private variable ve metodları sub class inherit edemez asla)
 
 
-Final Keyword: unchangable   --- default value si yok. tanımlamak zaorundasın. cons ile yapabilirsin ONCE AND FOREVER
+Final Keyword: unchangable   --- default value si yok. tanımlamak zorundasın. cons ile yapabilirsin ONCE AND FOREVER
 
 		Variables: can not be reassigned
 
@@ -25,11 +25,11 @@ Exceptions Topic:
 
 		//kod yazarken veya çalıştırırken ortaya çıkan istenmeyen veya beklenmeyen olaylar (errors or bugs)
           kontrol edilebilir ve kotrol edilemez olmak üzere ikiye ayrılır.
-          programın cokmesini enlemek için kod yazmalısın.
+          programın cokmesini önlemek için kod yazmalısın.
           	1)kontrol eilemeyen istisnalar
-          		sadece program çalıştırıldıgında ortayay çıkar
-          		kontrol edilmesi dahazor
-          		runtime exception parent class ı içinde düzenlesin (parent class runtime exception olur)
+          		sadece program çalıştırıldıgında ortaya çıkar
+          		kontrol edilmesi daha zor
+          		runtime exception parent class ı içinde düzenlersin (parent class runtime exception olur)
           		        sub class ları aritmetik exception, illegal argument , out of bound vs.
            2) kontroş edilebilir istisnalar
                 compile time da yani kod yazarken. complier ın check edebileceği istisnalar (;, { vs.)
@@ -38,7 +38,7 @@ Exceptions Topic:
 
 
 OutOfMemoryError: heap memory is full
-        if else blok a benzer sadece biri çalışır. birbiribnden ayrı yazılamaz bağlı birbiirne ikisi try-cath
+        if else blok a benzer sadece biri çalışır. birbiribnden ayrı yazılamaz bağlı birbirine ikisi try-catch
 
 
 Exceptions: unexpected or unwanted events
@@ -68,12 +68,12 @@ Exception handlings:
 						}
 
 
-			Multi-catch block: parent exception type can not be placed before the child exception type (sadece unchecked da zaten checked da biliyoraun
+			Multi-catch block: parent exception type can not be placed before the child exception type (sadece unchecked da zaten checked da biliyorum
 			                    multi branch if else blok gibi
 			                    tek kural parent class ı (RunTime Exception) önce child ı sonra yazma. child olanı önce yaz
 
 			finally block: always gets executed regardless of the exception is being handled or not handled
-			                // finally bloğu ensona yazmalısın cath arasına yazma
+			                // finally bloğu ensona yazmalısın catch arasına yazma
 
 							to stop the execution of the finally block: Syste.exit(0)
 

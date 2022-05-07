@@ -13,7 +13,7 @@ public class Checked_vs_Unchecked {
         int b = 0;
 
         // System.out.println(  a / b  );----> bu hata ancak program çalıştıgında çıkıyor. programın yürümesini engelliyor
-        //sonrasına geçmesini engelliyor
+        //sonrasına geçmesini engelliyor. sonraki wooden spoon u yazmaz.
         //System.out.println("Wooden Spoon");
 
         char[] characters = {'A', 'B', 'C'};
@@ -24,7 +24,7 @@ public class Checked_vs_Unchecked {
 
         Student student = null;//null ile bir object oluşturulmaz boştur ama nesne değil
 
-        // System.out.println( student.getName() );---> nesne olmadığı için simini de veremez.
+        // System.out.println( student.getName() );---> nesne olmadığı için ismini de veremez.
         //student.study();---> object yok hata verir
 
         final String str = "Wooden Spoon";
@@ -44,7 +44,7 @@ public class Checked_vs_Unchecked {
 
        //Thread.sleep(3000); // checked
 
-        //sleep in altında kırmızı çizgi çıkar solda kırmızı ampul ampiule tıkla seceneklerde ikinci surround with track and cathc seceneğini tıklarsan kısayoldan oluşturur
+        //sleep in altında kırmızı çizgi çıkar solda kırmızı ampul ampule tıkla seceneklerde ikinci surround with track and catch seceneğini tıklarsan kısayoldan oluşturur
 // kırmızı çizginin sonunda bekle bilgi penceresi çıkar hata hangi sınıfa ait nedeni ne vs.
         System.out.println("Cydeo");
 

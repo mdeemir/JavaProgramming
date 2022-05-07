@@ -23,6 +23,8 @@ public class PolymorphismIntro {
 
         Object[] array = {str, n1, n2, r1, new Circle(4) , new Square(7)};
 
+        //OBJECT JAVADA HER SINIFIN PARENT CLASS IDIR. ÖZEL Bİ SINIF. HEPSİNİ İÇİERİ.  İS A REALTİON BAĞLANTISI VAR.
+
         /*
 
             WebDriver driver;
@@ -42,7 +44,7 @@ public class PolymorphismIntro {
         Employee driver = new Driver("Jhon",34,'M',42,"Lyft Driver",75000.00);
 
         ArrayList<Person> cydeoEmployees = new ArrayList();
-
+//PARENT HEPSİNİ KARŞILIYOR.---> İS A RELATİONSHİP OLACAK. HAS A RELATİONSHİP OLMAZ
         cydeoEmployees.add(tester);
         cydeoEmployees.add(developer);
         cydeoEmployees.add(teacher);

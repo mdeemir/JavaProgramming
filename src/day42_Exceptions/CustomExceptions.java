@@ -2,7 +2,7 @@ package day42_Exceptions;
 
 
 class FadyException extends RuntimeException{ // custom unchecked exception
-// once runtime exception classı inherit ettik o nedenle aşagıda throw il yeni nesne oluşturmamıza izinverdi
+// once runtime exception classı inherit ettik o nedenle aşagıda throw ile yeni nesne oluşturmamıza izin verdi
     public FadyException(){ // metod overload yaptık bunu çağırınca aşağıdaki yazdırır
         super("Time for a short break");
     }

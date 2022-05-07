@@ -14,7 +14,7 @@ public class MorningWorkOut {
 
             System.out.print("\rPush up "+i);
 
-            sleep(1.5);//---> kendimiz sllep methodu oluşturduk. ve değişkeni second olarak verdik.
+            sleep(1.5);//---> kendimiz sleep methodu oluşturduk. ve değişkeni second olarak verdik.
             // her zzaman thread.sleep metodunu çağırdıgımız da try-catch ile uğraşmayalım diye. bir kere sleep() metodu oluşturup
             //try-cath i içine yazdık
 
