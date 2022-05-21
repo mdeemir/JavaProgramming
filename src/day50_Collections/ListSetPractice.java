@@ -12,7 +12,7 @@ public class ListSetPractice {
 
         System.out.println(set);
 
-       // Integer[] array = set.toArray(new Integer[0]);
+       // Integer[] array = set.toArray(new Integer[0]);  ----> set i array a cevirdik
 
         List<Integer> list =new ArrayList<>( set );
 

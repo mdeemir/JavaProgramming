@@ -42,9 +42,9 @@ public class IterablePractice {
 
         System.out.println(it.next());
     */
-
-        while(it.hasNext()){
-            if( it.next()  < 4 ){
+//while loop daha kullanışlı
+        while(it.hasNext()){ // hasNext() metodu seride eleman varsa boolean true döndürür
+            if( it.next()  < 4 ){ // next() metod serideki ilk elemanı döndürür
                 it.remove();
             }
         }
@@ -65,6 +65,8 @@ public class IterablePractice {
 
         System.out.println("===================================================");
 
+
+        // en kısa yol lambda expression  2 yol var en kolayı bu diğeri while iile collectiondan remove if yapmak istersen
         List<Integer> list4 = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
 
         list4.removeIf( each ->  each < 4 );
