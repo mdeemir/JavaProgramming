@@ -39,6 +39,9 @@ public class RemovePalindromes {
         );
 
         /*
+
+        map lerde  öğrenecez predicate
+
         Predicate<String> palindrome = str -> {
             String reverse = "";
             for(int i = str.length()-1; i >= 0; i--){
