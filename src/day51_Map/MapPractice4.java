@@ -34,7 +34,10 @@ public class MapPractice4 {
         groups.put(24, group24);
         groups.put(5, group5);
 
-        System.out.println(groups);
+        System.out.println(groups);//BÜRÜN GRUPLARDAKİ İSİMLERİ YAZDIRIR
+        /*
+        {1=[Duygu, Magda, Farangez, Edison, Kerem, Farangis], 2=[Margie, Vesele, Iryn, Nilufar, Aziza, Nurcan, Raika, Igor, Elif, Sana, Azamat], 5=[Nazar, Veronika, Mikael, Layla, Badmaa, Zaeir, Anna, Tamara, Eugene], 9=[Alex, Ali, Andriy, Cassandra, Sevgul, Olha, Tito, Ozan, Serkan, Furkan, Madina, Muharrem], 24=[Maria, Kristina, Amin, George, Layan, Amin, Yulia, George, Ayanle, Maxim, Nermin, Doughlas]}
+         */
 
         /*
         for (String each : groups.get(24)) {
@@ -42,7 +45,8 @@ public class MapPractice4 {
         }
         */
 
-        System.out.println(groups.get(2).get(1));
+        System.out.println(groups.get(2).get(1));// VESELE
+        //İKİNCİ GET(1) BURADAKİ 1 İNDEX NUMBER  groups.get(2) BU BİZE ARRAYLİST DÖDÜRÜYOR. İNDEX 0 DAN BAŞLADIĞI İÇİN 2. İSMİ VERDİ
 
 
         System.out.println("------------------------------------------------");

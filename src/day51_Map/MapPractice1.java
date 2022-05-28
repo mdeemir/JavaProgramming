@@ -24,7 +24,8 @@ public class MapPractice1 {
 
       //  1. Update the "M" to Male and "F" to Female
 /*
-        for (String key : employeeMap.keySet()) {
+1. ÇÖZÜM
+        for (String key : employeeMap.keySet()) { //employeeMap.get(key) STRİNG DÖNDÜRÜR
             if(employeeMap.get(key).equalsIgnoreCase("m") ){
                 employeeMap.replace(key, "Male");
             }
@@ -50,12 +51,12 @@ public class MapPractice1 {
         }
 
 
-        System.out.println(employeeMap);
+        System.out.println(employeeMap);//{Kakalina=Female, Glad=Female, Jereme=Male, Bertrando=Male, Winfred=Male, Marika=Female, Ddene=Female, Selle=Female, Orlando=Male, Brigitte=Female, Desirae=Female, Derk=Male, Ajay=Female}
 
         System.out.println("--------------------------------------");
 
       //  2. Display the names of all female employees
-
+// KEY VE VALUETYİ PAİR OLARAK ENTRY METODU İLE KULLANMAK DAHA AVANTAJLI HEM KEYLERE HEM VALUELERE ULAŞABİLİRYORSUN
         for (Map.Entry<String, String> eachPair : employeeMap.entrySet()) {
             String eachKey = eachPair.getKey();
             String eachValue = eachPair.getValue();

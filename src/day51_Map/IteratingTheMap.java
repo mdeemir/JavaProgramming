@@ -16,40 +16,40 @@ public class IteratingTheMap {
         students.put("Andriy",98);
 
         /*
-        Set<String> keys = students.keySet();
+        Set<String> keys = students.keySet(); --->keySet();  SET DÖNDÜRÜR SET VERİ YAPISINA ATADIK. KET STRİNG OLDUĞU İÇİN STRİNG YAZILDI
         for (String eachKey : keys) {
-         //   System.out.println(eachKey +" : " + students.get(eachKey));
-            students.replace(eachKey, students.get(eachKey) + 5);
+         //   System.out.println(eachKey +" : " + students.get(eachKey)); --> AD VE NOTUNU YAZDIRDIK HER ÖĞRENCİNİN
+            students.replace(eachKey, students.get(eachKey) + 5); ---> HER ÖĞRENCİNİN DEĞERİNE (NOTUNA) 5 PUAN EKLEDİK
         }
 */
 
-        System.out.println(students);
+        System.out.println(students); //{Alex=80, Andriy=98, Aygun=95, Maria=90, Ozan=99, Serkan=70, Ali=85}
 
         Map<String, Integer> earlyBirds = new HashMap<>(); // score >= 90
         Map<String, Integer> angryBirds = new HashMap<>(); // score < 90
 
-        for (String key : students.keySet()) {
+        for (String key : students.keySet()) {//students.keySet() SET COLLECTİONU DÖNDÜRÜR FOR EACH DÖNGÜSÜNE ALDIK
             Integer value = students.get(key);
             if(value >= 90){
-                earlyBirds.put(key, value);
+                earlyBirds.put(key, value);// 90 VE BÜYÜK İSE EARLYBİRDS E EKLİYORUZ
             }else{
-                angryBirds.put(key, value);
+                angryBirds.put(key, value); //// 90 DAN KÜÇÜKSE ANGRYBİRDS E EKLİYORUZ
             }
         }
 
 
-        System.out.println("earlyBirds = " + earlyBirds);
-        System.out.println("angryBirds = " + angryBirds);
+        System.out.println("earlyBirds = " + earlyBirds);//earlyBirds = {Andriy=98, Aygun=95, Maria=90, Ozan=99}
+        System.out.println("angryBirds = " + angryBirds);//angryBirds = {Alex=80, Serkan=70, Ali=85}
 
 
         Set<String> names = students.keySet();
 
         System.out.println("--------------------------------------------------------");
 
-       // Collection<Integer> scores = students.values();
+       // Collection<Integer> scores = students.values();---> values() RETURN TYPE COLLECTİON
         List<Integer> scores = new ArrayList<>( students.values() );
 
-        System.out.println(scores);
+        System.out.println(scores); //[80, 98, 95, 90, 99, 70, 85]
 
 
         for (Integer value : students.values()) {
@@ -58,8 +58,8 @@ public class IteratingTheMap {
 
         System.out.println("--------------------------------------------------------");
 
-        int maxScore = Integer.MIN_VALUE;
-        int minScore = Integer.MAX_VALUE;
+        int maxScore = Integer.MIN_VALUE; // MAXSCORE U MİN NUMARA KABUL ETTİK
+        int minScore = Integer.MAX_VALUE; // MİNSCORE U MAX NUMARA KABULETTİK
 
         for (Integer score : students.values()) {
             if(score > maxScore){
@@ -72,16 +72,17 @@ public class IteratingTheMap {
 
         }
 
-        System.out.println("maxScore = " + maxScore);
-        System.out.println("minScore = " + minScore);
+        System.out.println("maxScore = " + maxScore); //maxScore = 99
+        System.out.println("minScore = " + minScore); //minScore = 70
 
         System.out.println("--------------------------------------------------------");
-
+        //COLLECTİONS UTİLİTY CLASSTA MAX VE MİN METODUNU KULLANIK
+        //students.values()   MAPDEKİ DEĞERLER SADECE
         int max = Collections.max( students.values() );
         int min = Collections.min( students.values() );
 
-        System.out.println("max = " + max);
-        System.out.println("min = " + min);
+        System.out.println("max = " + max);//maxScore = 99
+        System.out.println("min = " + min);//min = 70
 
         System.out.println("--------------------------------------------------------");
 
@@ -104,14 +105,15 @@ public class IteratingTheMap {
             }
         }
 */
-        System.out.println(count);
+        System.out.println(count);//3
 
-
+//REMOVE İF COLLECTİONA ÖZEL MAP DE OLMAZ
         System.out.println("--------------------------------------------------------");
-
+//entrySet()---> SET COLLLECTİON DÖNDÜRÜR. KEY VE VALEUYİ BERABER İÇERİR
         for (Map.Entry<String, Integer> entry : students.entrySet()) {
             //System.out.println(entry);
             System.out.println(entry.getKey() +" : " +entry.getValue());
+            // ENTRY KEY VE VALUEYİ BERABER GETİRDİĞİ İÇİN KEY VE VALUEYİ AYRI AYRI GET () İLE ÇAĞIRABİLİRİZ
         }
 
 
