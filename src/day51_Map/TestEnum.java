@@ -6,7 +6,7 @@ public class TestEnum {
 
      //   String browser = "Wooden Spoon";
           Browser browser = Browser.SAFARI;
-
+//          Browser browser = Browser.WOODENSPOON;---> ENUM DA TANIMLADIĞINDAN BAŞKA BİRŞEY ATAYAMAZSIN
           switch(browser){
               case FIREFOX:
                   System.out.println("Firefox is selected");

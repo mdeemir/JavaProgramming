@@ -8,6 +8,8 @@ public class Test {
 
         // function1: create a function that can display a number is odd or even
         MyFirstFunctionalInterface  oddOrEvenNumber =  (n) -> {
+           //(n) -> TEK DEĞİŞKEN VARSA PARANTEZE GEREK YOK. AMA PARAMETRE YOKSA VEYA BİRDEN FAZLA İSE ZORUNLU
+            //{} --> TEK STATEMENT VARSA GEREK YOK AMA FAZLA İSE ZORUNLU
             if(n%2==0){
                 System.out.println(n + " is even number");
             }else{

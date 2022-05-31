@@ -11,12 +11,14 @@ public class UniqueCharacters {
 
         String str = "aabcccdeeeef";
 
-        String[] arr = str.split("");
+        String[] arr = str.split(""); // SPLİT METOD İLE ARRAY A CEVİRDİK
 
         Map<String, Integer> result = new LinkedHashMap<>();
+        // GİRİŞ SIRASINI KORUDUGU İÇİN LİNKEDHASHMAP İ SEÇTİK.   KEY STRİNG VALUE İNTEGER
 
         for (String each : arr) {
             int frequency = Collections.frequency( Arrays.asList(arr) , each );
+            //  Arrays.asList(arr) ---> FREQUENCY METODU COLLECTİON İSTEDİĞİ İÇİN ARRAY I ARRAYLİST ÇEVİRDİK.
             if(frequency == 1){
                 result.put(each, frequency);
             }

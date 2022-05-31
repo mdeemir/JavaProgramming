@@ -1,5 +1,8 @@
 package day51_Map;
-
+//BÜYÜK HARFLERLE YAZILIR GENELDE
+//İKİ KELİME İSE ALT ÇİZGİ KOYULMALI
+//CLASS OLUŞTURUR GİBİ NEW ---> JAVA CLASS ---> ENUM SEÇ
+//KÜÇÜK BİE DATA SETİ İÇİN KULLAILIR
 public enum Browser {
 
     CHROME,

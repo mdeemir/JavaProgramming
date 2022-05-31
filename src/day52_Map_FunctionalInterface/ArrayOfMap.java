@@ -7,7 +7,7 @@ import java.util.Map;
 public class ArrayOfMap {
 
     public static void main(String[] args) {
-
+// LİST OF MAĞ YAPARKEN ARRAY YERİNE LİST OF ARRAY KULLAN. SİZE DYNAMİC. EKLE ÇÜKAR METODLARI VAR EKSTRA. ARRAY KISITLI
         Map<String, String> scrumTeam1 = new LinkedHashMap<>();
         scrumTeam1.put("Abdulhamid","SM");
         scrumTeam1.put("Nikita","Developer");
@@ -49,7 +49,7 @@ public class ArrayOfMap {
         scrumTeam5.put("Tamara","SDET");
         scrumTeam5.put("Adnan","QA");
 
-
+//DATA TİPİ MAP OLAN Bİ ARRAY OLUŞTURDUK
         Map<String, String>[]  array = new Map[5];
         array[0] = scrumTeam1;
         array[1] = scrumTeam2;
@@ -59,7 +59,7 @@ public class ArrayOfMap {
 
         System.out.println(Arrays.toString(array) );
 
-        System.out.println(array.length);
+        System.out.println(array.length);//5
 
         //  1.2 Print the names of all scrum masters
 

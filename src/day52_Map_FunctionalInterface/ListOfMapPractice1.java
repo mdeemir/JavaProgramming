@@ -51,16 +51,18 @@ public class ListOfMapPractice1 {
       //  LinkedHashMap<Integer, Integer> m = new LinkedHashMap<>();
 
     //    1.1 Create a data structure that can contain all the given maps above
-
-        List< Map<String, String> >  scrumTeams = new ArrayList<>();
-        scrumTeams.add(  scrumTeam1);
-        scrumTeams.add(scrumTeam2 );
+                // KEY VE VALUE DATA TİPİ UYUMLU OLMALI
+        // MAP HEPSİNİN ÜSTÜNDE PARENT
+        List< Map<String, String> >  scrumTeams = new ArrayList<>();//COLLECTİON U KULLANMAK DAHA İYİ DATA YAPISI İÇİN
+        // ÇÜNKÜ BOYUTU ARTIRILABİLİR AZALTILABİLİR DYNAMİC ARRAYLİSTİ BU NEDENLE KULLANDIK
+        scrumTeams.add(  scrumTeam1);//SCRUMTEAM1-2-3-4-5 HEPSİ OBJECT
+        scrumTeams.add(scrumTeam2 );// ARRAYLİST SİZE I 2 MAP SAYISI. MAPIN İÇİNDEKİ VERİ SAYISI DEĞİL.
         scrumTeams.addAll(Arrays.asList(scrumTeam3, scrumTeam4, scrumTeam5));
 
      //   scrumTeams.addAll((Collection<? extends LinkedHashMap<String, String>>) Arrays.asList((LinkedHashMap) scrumTeam1, (LinkedHashMap) scrumTeam1, (LinkedHashMap) scrumTeam1));
 
         System.out.println(scrumTeams);
-        System.out.println(scrumTeams.size());
+        System.out.println(scrumTeams.size());//5
 
 
     // print the names of all employees:
