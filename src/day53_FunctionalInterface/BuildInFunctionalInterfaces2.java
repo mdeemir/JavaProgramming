@@ -25,8 +25,9 @@ public class BuildInFunctionalInterfaces2 {
     public static void main(String[] args) {
 
         //Create a function that can check if the Integer is contained in an array of integer, return boolean
-
+// BİPREDİCATE İKİ FARKLI VEYA AYNI VERİ TİPİNDE PARAMETRE KABUL EDER VE BOOLEAN DÖNDÜRÜR
         BiPredicate<Integer[], Integer> contains = (a, b) -> {
+           //A---> INTEGER[], B---> INTEGER
             boolean result = false;
 
             for (Integer each : a) {
@@ -40,8 +41,8 @@ public class BuildInFunctionalInterfaces2 {
         };
 
         Integer[] arr = {1,2,3,4,5,6,7,8,9,10};
-        boolean r1 = contains.test(arr, 11);
-
+        boolean r1 = contains.test(arr, 11);//İKİ PARAMETRE KABUL EDİYOR
+//TES DE BİPREDİCATE FUNCTİONALİNTERFACEDE BİR METOD
         System.out.println(r1);
 
         System.out.println("---------------------------------------------");
@@ -49,6 +50,7 @@ public class BuildInFunctionalInterfaces2 {
 
         //                              a= bac,   b= cab
         BiPredicate<String, String> anagram = (a, b) -> {
+            // (a, b) -> YAZARKEN PARANTEZ KULLNAMK ZORUNDASIN CÜNKÜ BİRDEN FAZLA PARAMETRE VAR
             String[] arr1 = a.split(""); //[b, a, c]
             String[] arr2 = b.split(""); //[c, a, b]
             Arrays.sort(arr1);

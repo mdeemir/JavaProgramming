@@ -109,7 +109,14 @@ public class MapPractice {
         System.out.println("name2 = " + name2);
         System.out.println("min = " + min);
 
-
+//toplam ders saatini hesapladık
+        double totalhours=0;
+        for (Map<String, Double> eachUnit : allUnits) {
+            for (Map.Entry<String, Double> entry : eachUnit.entrySet()) {
+            totalhours+=entry.getValue();
+            }
+        }
+        System.out.println("totalhours = " + totalhours);
 
 
     }

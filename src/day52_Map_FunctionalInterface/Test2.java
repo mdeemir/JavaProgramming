@@ -12,7 +12,7 @@ public class Test2 {
 
         printEach.test("Wooden Spoon");
 
-
+//() ve {} kullanılmasına gerek yok tek parametre ve tek işlem varsa
         MySecondFunctionalInterface<Integer> cube = n -> System.out.println(n*n*n);
 
         cube.test(5);
