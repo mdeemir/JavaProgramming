@@ -60,6 +60,8 @@ public class BuildInFunctionalInterfaces2 {
 
         System.out.println("---------------------------------------------");
         // create a function that can print the given string for given number of times
+        //BİCONSUMER 2 PARAMETRE KABUL EDER AMA DEĞER DÖNDÜRMEZ. VOİD
+        // metod detaylarını java kütüphanesinden öğrenmek için imleç BiConsumer üzerinde iken ctrl+click  bas
         BiConsumer<String, Integer>  printMultipleTimes = (s, n) -> {
             for (int i = 0; i < n; i++) {
                 System.out.println(s);
@@ -84,12 +86,12 @@ public class BuildInFunctionalInterfaces2 {
             System.out.println(k + " : "+v);
         }
          */
-
+// map te for each map kullanırken BiConsumer functional interface kullanılır. daha az code daha hızlı
         scrumTeam1.forEach(  (k, v) -> System.out.println(k+" : "+v) );
 
 
         System.out.println("---------------------------------------------");
-
+//BiFunction interface de iki parametre kabul eder ve bir değer döndürür RETURN
         //1. create a function that takes two integers and returns the maximum integer
         BiFunction<Integer, Integer, Integer> maxNum = (a, b) -> (a>b)?a:b;
 
@@ -102,7 +104,7 @@ public class BuildInFunctionalInterfaces2 {
         BiFunction<int[], int[], List<Integer>> merge = (x, y) -> {
             List<Integer> result = new ArrayList<>();
 
-            for (int each : x) result.add(each);
+            for (int each : x) result.add(each);// {} kaldırdı tek satır kod olduğundan
 
             for( int each: y) result.add(each);
 
@@ -122,7 +124,7 @@ public class BuildInFunctionalInterfaces2 {
 
         map ==> {Josh=100, Daniel=110}
          */
-
+//                                                  return type map
         BiFunction<List<String>, List<Integer>, Map<String, Integer>>  merge2 = (j, k) ->{
             Map<String, Integer> map = new HashMap<>();
             for (int i = 0; i < j.size(); i++) {
@@ -138,7 +140,7 @@ public class BuildInFunctionalInterfaces2 {
 
         Map<String, Integer> students = merge2.apply(names, scores);
 
-        System.out.println(students);
+        System.out.println(students);//{Kseniia=95, Aygun=98, Layan=90}
 
 
 
